@@ -1,0 +1,13 @@
+{
+    "admin/services/sshws": {
+        "title": "SSH WS Injector",
+        "action": {
+            "type": "view",
+            "path": "sshws/settings"
+        },
+        "depends": {
+            "acl": [ "luci-app-sshws" ],
+            "uci": { "sshws": true }
+        }
+    }
+}
