@@ -12,7 +12,7 @@ define Package/luci-app-sshws
   CATEGORY:=LuCI
   SUBMENU:=3. Applications
   TITLE:=LuCI Support for SSH WS Tunneling
-  DEPENDS:=+python3-light +sshpass +openssh-client +badvpn-tun2socks
+  DEPENDS:=+python3-light +sshpass +openssh-client
   PKGARCH:=all
 endef
 
