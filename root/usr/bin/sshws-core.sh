@@ -30,7 +30,7 @@ sleep 2
 # Menggunakan ncat (netcat) untuk mengalihkan SSH ke port 8888 (Python)
 sshpass -p "$PASS" ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" \
     -o "ServerAliveInterval=30" -o "ServerAliveCountMax=3" \
-    -o "ProxyCommand=ncat 127.0.0.1 8888" \
+    -o "ProxyCommand=nc 127.0.0.1 8888" \
     -N -D 0.0.0.0:$SOCKS_PORT "$USER@$SERVER_IP" &
 SSH_PID=$!
 echo "SSHWS: SSH Client berjalan (PID: $SSH_PID)"
